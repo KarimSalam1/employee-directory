@@ -1,0 +1,62 @@
+/* Light Theme */
+:root {
+  --bg: #ffffff;
+  --text: #10b981;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+}
+
+/* Dark Theme */
+body.dark {
+  --bg: #374151;
+  --text: #f3f4f6;
+  --card-bg: #374151;
+  --border: #10b981;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+.card,
+.layout,
+.page-content,
+.header {
+  background-color: var(--card-bg);
+  color: var(--text);
+  border-color: var(--border);
+  transition: background-color 0.5s ease, color 0.5s ease,
+    border-color 0.5s ease;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg);
+  color: var(--text);
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text);
+  cursor: pointer;
+  margin-right: 0.75em;
+}
+
+.page-content {
+  padding: 2rem;
+}

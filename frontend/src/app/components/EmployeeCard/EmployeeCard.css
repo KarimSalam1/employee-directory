@@ -1,0 +1,142 @@
+.employee-card {
+  width: 380px;
+  height: 300px;
+  border-radius: 8px;
+  border: 1px solid var(--border, #e2e8f0);
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: var(--card-bg, #fff);
+  transition: box-shadow 0.2s;
+}
+
+.employee-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #10b981;
+  position: relative;
+}
+
+.employee-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.employee-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.employee-value {
+  font-size: 22px;
+  margin: 5px;
+}
+
+.employee-info {
+  margin-bottom: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.employee-headline {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 14px;
+  color: #10b981;
+}
+
+.employee-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.icon {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.delete-button {
+  margin-top: 12px;
+  background-color: transparent;
+  border: 1.5px solid #dc2626;
+  color: #dc2626;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: #dc2626;
+  color: white;
+}
+
+.edit-button {
+  background-color: transparent;
+  margin-top: 12px;
+  border: 1.5px solid #249851;
+  color: #249851;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.edit-button:hover {
+  background-color: #249851;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .employee-card {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+  .employee-avatar {
+    width: 56px;
+    height: 56px;
+  }
+  .employee-name {
+    font-size: 1rem;
+  }
+  .employee-value {
+    font-size: 1rem;
+  }
+  .employee-details {
+    gap: 4px;
+  }
+  .delete-button {
+    padding: 5px 8px;
+    font-size: 0.95rem;
+  }
+  .edit-button {
+    padding: 5px 8px;
+    font-size: 0.95rem;
+  }
+  .employee-icons {
+    gap: 8px;
+  }
+}

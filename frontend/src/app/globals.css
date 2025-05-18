@@ -1,0 +1,46 @@
+/* :root {
+  --card-bg: #ffffff;
+  --card-text: #111111;
+  --card-border: #e0e0e0;
+  --bg: #ffffff;
+  --text: #000000;
+}
+
+[data-theme="dark"] {
+  --card-bg: #1e1e1e;
+  --card-text: #f1f1f1;
+  --card-border: #333;
+  --bg: #121212;
+  --text: #ffffff; */
+/* } */
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
